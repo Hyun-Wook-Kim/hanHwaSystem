@@ -1,0 +1,16 @@
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+
+.box:hover:hover{
+    border: 1px solid;
+    border-top-color: red;
+    transition: border-top-color 1s linear;
+}

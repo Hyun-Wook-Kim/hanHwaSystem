@@ -1,0 +1,70 @@
+#wrap
+	body, select, input, button, textarea, button, pre{
+		font-size 16px;
+		font-family : 'NotoSans', sans-serif
+}
+
+	body{
+		line-height: 1.75
+		color: #282828
+		word-break : break-all
+}
+
+
+
+	.header
+		.inner-header
+			.nav 1260 * 120px 	padding 40px 30px
+				.logo 130px * 40px
+				.button 40 * 40
+				.gnb
+					ul>li * 5 	112 * 40
+						>a 112*40 (padding 좌우 23px)
+
+				.buttonSection	340 * 40
+						.button 138 * 40px
+						.buttonUl>li*2 40*40
+							img 30 * 30
+
+	.container
+		.inner-container 100% background black? gray?
+			.sections
+				.section.sec 1 	height : 100vh - 120px (header 크기)	min-height : 600px;
+					.gallery 100%
+						>ul 400%
+							>li * 4 100% * 600px
+								>img 1920 * 840 absolute left:50% top:50% margin?? 뭐여 시벌
+								>button 244 * 60 absolute  bottom 125px 가로가운데
+								> controlBox position absolute bottom 50px
+									.customPage	112 * 28
+										ul>li*4 28*28 
+											:after 10*10
+									.controlAuto > a 	 28 * 28
+											.start 8*10
+											.pause 8 * 10
+
+				.section.sec2 	width : 1200px padding 215px 0
+					<h2>사업영역 	100% * line-height32px font-size 22px 
+					<p>	margin 30px 0 125px   NotoSansL font-size 50px lineheight- 70px letter-spacing : -0.03em
+						<span>
+					::before
+					<ul> calc(100% + 40px); margin-left 114px  relative 
+						>li * 4 width: 20% font-familiy 'Myriad Pro'; font-size 22px line-height 30px center keep-all
+							<before>
+							<a>
+							<span> 8 * 8
+							Defense
+					::after
+
+
+				.section.sec3 	width: 1200px 가로가운데 padding: 215px 0
+					<h2>홍보센터 	100% * line-height32px font-size 22px 
+					<p>	margin 30px 0 125px   NotoSansL font-size 50px lineheight- 70px letter-spacing : -0.03em
+						<span>
+					<.areaBtn> 1200 * 35px 텍스트중앙정렬     margin: -40px 0 140px;
+						<a> padding-right: 30px;
+							<before> 동그라미 20 * 20
+							<after> 5*6 세모
+					<.board>	    1200px 
+						ul>li*3 380 * 485px NotoSans, sans-serif
+							>a 
