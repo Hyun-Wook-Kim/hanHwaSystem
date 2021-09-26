@@ -1,20 +1,20 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew&display=swap'); */
 
 @font-face {
 	font-family:'NotoSans';font-weight:normal;font-style:normal;
-	src:url('../../font/NotoSansKR-Regular.eot');
+	src:url('../../font/noto-sans-kr-v21-korean-regular.woff');
 }
 
 @font-face {
 	font-family:'NotoSansL';font-weight:normal;font-style:normal;
-	src:url('../../font/NotoSansKR-Light.eot');
+	src:url('../../font/noto-sans-kr-v21-korean-300.woff');
 }
 
 @font-face {
 	font-family:'NotoSansM';font-weight:normal;font-style:normal;
-	src:url('../../font/NotoSansKR-Medium.eot');
+	src:url('../../font/noto-sans-kr-v21-korean-500.woff');
 }
 
 

@@ -93,41 +93,6 @@ $(".hideUl").on("mouseleave", () => {
   $(".hideUl").css({ visibility: "hidden" });
 });
 
-$(".headerXBtnSet").on("click", (event) => {
-  $(".headerXBtn").css("visibility", "hidden");
-  $(".headerXChange").css({ visibility: "visible" });
-  $(".leftslash").css({
-    visibility: "visible",
-    transform: "rotate(45deg)",
-    transition: "all 0.3s",
-  });
-  $(".rightslash").css({
-    visibility: "visible",
-    transform: "rotate(-45deg)",
-    transition: "all 0.3s",
-  });
-
-  $("main").css({ visibility: "hidden" });
-});
-
-$(".headerXChange").on("click", () => {
-  console.log("클릭");
-  //   $(".headerXBtn").css("visibility", "visible");
-  $(".headerXChange").css({ visibility: "hidden" });
-  $(".leftslash").css({
-    visibility: "hidden",
-    transform: "rotate(0deg)",
-    transition: "none",
-  });
-  $(".rightslash").css({
-    visibility: "hidden",
-    transform: "rotate(0deg)",
-    transition: "none",
-  });
-  $(".headerXBtn").css("visibility", "visible");
-  $("main").css({ visibility: "visible" });
-});
-
 $(".imgBoard>ul>li>a").on("mouseover", () => {});
 
 let sliderIndex = 0;
@@ -187,9 +152,9 @@ $(".section.sec4>ul>li>a").on("mouseout", (event) => {
   $(".section.sec4Bg>ul>li").removeClass("imgShow");
 });
 
-$(".footerCon>.button>.plusBtn").on("click", (event) => {
-  if ($(event.target).hasClass("outerSiteOn")) {
-    $(event.target).removeClass("outerSiteOn");
+$(".footerCon>.button").on("click", (event) => {
+  if ($(".footerCon>.button>.plusBtn").hasClass("outerSiteOn")) {
+    $(".footerCon>.button>.plusBtn").removeClass("outerSiteOn");
     $(".outerSite").css({
       visibility: "hidden",
       opacity: "0",
@@ -201,6 +166,46 @@ $(".footerCon>.button>.plusBtn").on("click", (event) => {
       opacity: "1",
       transform: "translate(0,0)",
     });
-    $(event.target).addClass("outerSiteOn");
+    $(".footerCon>.button>.plusBtn").addClass("outerSiteOn");
   }
+});
+
+/////////이거 맞아?
+
+$(".headerXBtnSet").on("click", (event) => {
+  $(".headerXBtn").css("visibility", "hidden");
+  $(".headerXChange").css({ visibility: "visible" });
+  $(".leftslash").css({
+    visibility: "visible",
+    transform: "rotate(45deg)",
+    transition: "all 0.3s",
+  });
+  $(".rightslash").css({
+    visibility: "visible",
+    transform: "rotate(-45deg)",
+    transition: "all 0.3s",
+  });
+
+  $("main").css({ display: "none" });
+  $("footer").css({ display: "none" });
+  $(".hiddenHeader").css({ display: "block" });
+});
+
+$(".headerXChange").on("click", () => {
+  //   $(".headerXBtn").css("visibility", "visible");
+  $(".headerXChange").css({ visibility: "hidden" });
+  $(".leftslash").css({
+    visibility: "hidden",
+    transform: "rotate(0deg)",
+    transition: "none",
+  });
+  $(".rightslash").css({
+    visibility: "hidden",
+    transform: "rotate(0deg)",
+    transition: "none",
+  });
+  $(".headerXBtn").css("visibility", "visible");
+  $("main").css({ display: "block" });
+  $("footer").css({ display: "block" });
+  $(".hiddenHeader").css({ display: "none" });
 });
