@@ -186,3 +186,21 @@ $(".section.sec4>ul>li>a").on("mouseover", (event) => {
 $(".section.sec4>ul>li>a").on("mouseout", (event) => {
   $(".section.sec4Bg>ul>li").removeClass("imgShow");
 });
+
+$(".footerCon>.button>.plusBtn").on("click", (event) => {
+  if ($(event.target).hasClass("outerSiteOn")) {
+    $(event.target).removeClass("outerSiteOn");
+    $(".outerSite").css({
+      visibility: "hidden",
+      opacity: "0",
+      transform: "translate(0,10%)",
+    });
+  } else {
+    $(".outerSite").css({
+      visibility: "visible",
+      opacity: "1",
+      transform: "translate(0,0)",
+    });
+    $(event.target).addClass("outerSiteOn");
+  }
+});
